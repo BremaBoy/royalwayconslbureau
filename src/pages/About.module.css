@@ -1,0 +1,323 @@
+/* ============================================================
+   About.module.css — CSS Module for the About page
+   ============================================================ */
+
+.pageWrapper {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ============================================================
+   HEADER SECTION
+   ============================================================ */
+.headerSection {
+  padding: 5rem 0;
+  background-color: rgba(var(--muted-rgb, 240 240 240) / 0.3);
+  border-bottom: 1px solid var(--border);
+}
+
+.headerContent {
+  max-width: 48rem;
+}
+
+.sectionLabel {
+  color: var(--secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-family: var(--font-serif, Georgia, serif);
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.subtext {
+  font-size: 1.25rem;
+  color: var(--muted-foreground);
+  line-height: 1.75;
+}
+
+/* ============================================================
+   MISSION & VISION SECTION
+   ============================================================ */
+.missionVisionSection {
+  padding: 6rem 0;
+}
+
+.missionVisionGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+@media (min-width: 768px) {
+  .missionVisionGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.sectionLine {
+  width: 3rem;
+  height: 0.25rem;
+  background-color: var(--secondary);
+  margin-bottom: 2rem;
+}
+
+.subHeading {
+  font-family: var(--font-serif, Georgia, serif);
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 1.5rem;
+}
+
+.paragraphText {
+  color: var(--muted-foreground);
+  line-height: 1.75;
+  font-size: 1.125rem;
+}
+
+/* ============================================================
+   TEAM PHOTO SECTION
+   ============================================================ */
+.teamPhotoSection {
+  padding: 0;
+  background-color: rgba(var(--muted-rgb, 240 240 240) / 0.2);
+}
+
+.teamPhotoWrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.teamImage {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.teamPhotoOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(var(--primary-rgb, 30 50 30) / 0.6), transparent);
+}
+
+.teamPhotoTextWrap {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: #fff;
+}
+
+.teamPhotoTitle {
+  font-family: var(--font-serif, Georgia, serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.teamPhotoSubtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* ============================================================
+   LEADERSHIP SECTION
+   ============================================================ */
+.leadershipSection {
+  padding: 6rem 0;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.leadershipHeader {
+  margin-bottom: 4rem;
+}
+
+.leadershipHeading {
+  font-family: var(--font-serif, Georgia, serif);
+  font-size: clamp(2rem, 4vw, 2.25rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.leadershipSubtext {
+  color: rgba(var(--primary-foreground-rgb, 255 255 255) / 0.7);
+  font-size: 1.125rem;
+  max-width: 42rem;
+  font-weight: 300;
+}
+
+.execWithPhotoGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .execWithPhotoGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.execCard {
+  /* Group hover applied on children */
+}
+
+.execImageWrapper {
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  position: relative;
+  border: 1px solid rgba(var(--secondary-rgb, 180 150 60) / 0.2);
+}
+
+.execImageOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(var(--primary-rgb, 30 50 30) / 0.2);
+  z-index: 10;
+  mix-blend-mode: multiply;
+  transition: background-color 0.5s;
+}
+
+.execCard:hover .execImageOverlay {
+  background-color: transparent;
+}
+
+.execImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+
+.execCard:hover .execImage {
+  filter: grayscale(0%);
+}
+
+.execName {
+  font-family: var(--font-serif, Georgia, serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.execRole {
+  color: var(--secondary);
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.execCredentials {
+  color: rgba(var(--secondary-rgb, 180 150 60) / 0.6);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.execBio {
+  color: rgba(var(--primary-foreground-rgb, 255 255 255) / 0.7);
+  line-height: 1.75;
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
+.execWithoutPhotoGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .execWithoutPhotoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.execListCard {
+  border: 1px solid rgba(var(--primary-foreground-rgb, 255 255 255) / 0.1);
+  padding: 2rem;
+  transition: border-color 0.3s;
+}
+
+.execListCard:hover {
+  border-color: rgba(var(--secondary-rgb, 180 150 60) / 0.4);
+}
+
+.execListCardInner {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.execAvatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: rgba(var(--secondary-rgb, 180 150 60) / 0.2);
+  border: 1px solid rgba(var(--secondary-rgb, 180 150 60) / 0.3);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.execAvatarText {
+  font-family: var(--font-serif, Georgia, serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.execListCardName {
+  font-family: var(--font-serif, Georgia, serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.execListCardRole {
+  color: var(--secondary);
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.execListCardCredentials {
+  color: rgba(var(--secondary-rgb, 180 150 60) / 0.6);
+  font-size: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.execListCardBio {
+  color: rgba(var(--primary-foreground-rgb, 255 255 255) / 0.7);
+  line-height: 1.75;
+  font-weight: 300;
+  font-size: 0.875rem;
+}

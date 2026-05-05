@@ -1,0 +1,129 @@
+/* ============================================================
+   Portfolio.module.css — CSS Module for the Portfolio page
+   ============================================================ */
+
+.pageWrapper {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ============================================================
+   HEADER SECTION
+   ============================================================ */
+.headerSection {
+  padding: 5rem 0;
+  background-color: rgba(var(--muted-rgb, 240 240 240) / 0.3);
+  border-bottom: 1px solid var(--border);
+}
+
+.headerContent {
+  max-width: 48rem;
+}
+
+.sectionLabel {
+  color: var(--secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  font-family: var(--font-serif, Georgia, serif);
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.subtext {
+  font-size: 1.25rem;
+  color: var(--muted-foreground);
+  line-height: 1.75;
+}
+
+/* ============================================================
+   PROJECTS SECTION
+   ============================================================ */
+.mainSection {
+  padding: 6rem 0;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .projectsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ============================================================
+   CTA SECTION
+   ============================================================ */
+.ctaSection {
+  padding: 5rem 0;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.ctaContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.ctaContent {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.ctaHeading {
+  font-family: var(--font-serif, Georgia, serif);
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.ctaSubtext {
+  color: rgba(var(--primary-foreground-rgb, 255 255 255) / 0.8);
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+
+.ctaBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: background-color 0.2s;
+  text-decoration: none;
+}
+
+.ctaBtn:hover {
+  background-color: rgba(var(--secondary-rgb, 180 150 60) / 0.9);
+}
