@@ -21,8 +21,8 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={14} className="shrink-0" />
-                <a href="mailto:contact@royalway.com" className="hover:text-white transition-colors">
-                  contact@royalway.com
+                <a href="mailto:info@royalwayconslbureau.com" className="hover:text-white transition-colors">
+                  info@royalwayconslbureau.com
                 </a>
               </div>
             </div>

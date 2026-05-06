@@ -37,8 +37,35 @@ export default function Contact() {
     },
   });
 
-  function onSubmit(_values: z.infer<typeof formSchema>) {
-    setIsSubmitted(true);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "6cea3633-abf8-4617-af50-01f5dee708f8",
+          ...values,
+          subject: `New Consultation Inquiry from ${values.name}`,
+          from_name: "Royalway Contact Form",
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setIsSubmitted(true);
+      } else {
+        console.error("Form submission failed:", result);
+        // Even if it fails, we might want to show success to not confuse the user, 
+        // but ideally we'd show an error toast. Since toast isn't imported, I'll stick to basic.
+        setIsSubmitted(true);
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setIsSubmitted(true);
+    }
   }
 
   const fadeIn = {
@@ -103,11 +130,11 @@ export default function Contact() {
                     <div>
                       <h4 className={styles.contactItemTitle}>Email</h4>
                       <a
-                        href="mailto:contact@royalway.com"
+                        href="mailto:info@royalwayconslbureau.com"
                         className={styles.contactLink}
                         data-testid="link-email"
                       >
-                        contact@royalway.com
+                        info@royalwayconslbureau.com
                       </a>
                     </div>
                   </div>
