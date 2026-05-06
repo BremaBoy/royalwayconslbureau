@@ -95,6 +95,8 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+
         <div className={styles.heroCurve}>
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M0 120 L1200 0 L1200 120 Z" className={styles.curveFill}></path>
