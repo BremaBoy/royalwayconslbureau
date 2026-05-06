@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-const ceoPhoto = "/images/founder1.png";
-const exec2Photo = "/images/founder2.png";
-const exec3Photo = "/images/founder3.png";
-const teamPhoto = "/images/about.png";
+const ceoPhoto = "/images/1D77A0B4-AEDD-4680-BD1C-2D5CFFBA47F2_1777835101070.jpeg";
+const exec2Photo = "/images/F1D92B43-7440-4A54-9EF5-DF1FD5BEE491_1777835101071.jpeg";
+const exec3Photo = "/images/376B408B-5F2A-4EF3-AC05-6CF9B8BCC6A5_1777835101073.jpeg";
+const teamPhoto = "/images/97F4A62A-0201-45DB-9F66-53F8F67E7699_1777835101074.jpeg";
 import styles from "./About.module.css";
 
 export default function About() {
