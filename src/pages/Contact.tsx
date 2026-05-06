@@ -80,8 +80,8 @@ export default function Contact() {
                     <div>
                       <h4 className={styles.contactItemTitle}>Address</h4>
                       <p className={styles.contactItemText}>
-                        Royalway Consulting Bureau<br />
-                        Lagos, Nigeria
+                        <strong>Head Office:</strong> 4/6 Adebiyi Abdulquadri Street, Magodo Phase II, Lagos<br /><br />
+                        <strong>Operations & Training Facility:</strong> 36A Toyin Street, Ikeja, Lagos
                       </p>
                     </div>
                   </div>

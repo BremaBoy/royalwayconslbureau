@@ -13,91 +13,90 @@ export default function Services() {
 
   const services = [
     {
-      title: "Accounting & Bookkeeping",
-      icon: FileText,
-      description: "Meticulous, technology-driven ledger management that provides real-time clarity into the financial health of your business. We handle everything from monthly reconciliations to full accounts management.",
-      benefits: [
-        "Monthly close and bank reconciliation",
-        "Accounts payable and receivable management",
-        "Real-time financial reporting and dashboards",
-        "Historical data clean-up and migration"
-      ]
-    },
-    {
-      title: "Internal Audit & Risk Management",
-      icon: ShieldCheck,
-      description: "Rigorous internal audit and enterprise risk management services that protect your assets, identify vulnerabilities, and strengthen your governance frameworks — ensuring long-term organizational resilience.",
-      benefits: [
-        "Comprehensive internal control reviews",
-        "Risk assessment and mitigation planning",
-        "Process and compliance audits",
-        "Audit committee advisory and reporting"
-      ]
-    },
-    {
-      title: "Debt Recovery",
+      title: "1. Management Consultancy",
       icon: TrendingUp,
-      description: "Strategic and professional debt recovery services designed to restore your cash flow without damaging client relationships. We combine legal knowledge, negotiation expertise, and systematic follow-through.",
+      description: "We provide strategic advisory services aimed at improving organizational efficiency, governance, and profitability.",
       benefits: [
-        "Structured receivables recovery programs",
-        "Professional debtor negotiation",
-        "Legal liaison and documentation",
-        "Post-recovery cash flow optimization"
+        "Business restructuring and turnaround strategies",
+        "Performance improvement frameworks",
+        "Change management and transformation initiatives",
+        "Corporate governance and best practice implementation"
       ]
     },
     {
-      title: "Financial Advisory",
-      icon: BarChart3,
-      description: "Comprehensive strategic guidance for navigating complex corporate challenges, capital decisions, and sustainable scaling. We act as an extension of your executive leadership team.",
+      title: "2. Forensic Audit, Internal Audit & Risk Advisory",
+      icon: ShieldCheck,
+      description: "Our forensic audit, internal audit, and risk advisory services are designed to detect, prevent, and mitigate financial, operational, and compliance risks within organizations while strengthening governance, accountability, and internal control systems. We apply risk-based audit methodologies, investigative techniques, and compliance frameworks to uncover irregularities, improve operational efficiency, and support informed decision-making.",
       benefits: [
-        "Business restructuring and turnaround",
-        "Capital raising and investment advisory",
-        "Cash flow modeling and forecasting",
-        "Mergers and acquisitions support"
+        "Forensic Audit Services & Investigation",
+        "Internal Audit Services & Evaluation",
+        "Risk Advisory Services & Fraud Prevention",
+        "Regulatory compliance audits and assurance reviews"
       ]
     },
     {
-      title: "Payroll Services",
-      icon: PieChart,
-      description: "Seamless, compliant payroll administration tailored to your organization's structure. We handle complex compensation arrangements, statutory deductions, and multi-entity payroll requirements.",
-      benefits: [
-        "Monthly payroll processing and management",
-        "Statutory deductions and remittances",
-        "Executive and staff compensation structuring",
-        "Year-end payroll documentation and filing"
-      ]
-    },
-    {
-      title: "Training & Capacity Building",
-      icon: Calculator,
-      description: "Practical, industry-relevant training programs delivered by our faculty of seasoned professionals. We build the internal competencies your team needs to sustain excellence independently.",
-      benefits: [
-        "Financial management and accounting training",
-        "Internal audit and compliance workshops",
-        "Leadership and entrepreneurship development",
-        "Customized in-house training programs"
-      ]
-    },
-    {
-      title: "Branding & Business Development",
-      icon: Megaphone,
-      description: "We help growing businesses establish a compelling professional identity that communicates their value clearly. From brand strategy to communications, we position your business for market confidence.",
-      benefits: [
-        "Brand identity design and strategy",
-        "Corporate communications development",
-        "Market positioning and messaging",
-        "Business development planning support"
-      ]
-    },
-    {
-      title: "Recruitment Services",
+      title: "3. Human Resource Management",
       icon: Users,
-      description: "End-to-end recruitment solutions that connect your organization with the right talent — efficiently and compliantly. We handle everything from job profiling through to onboarding support.",
+      description: "We support organizations in building high-performing teams through comprehensive human resource solutions.",
       benefits: [
-        "Executive and mid-level talent search",
-        "Job profiling and candidate assessment",
-        "Recruitment compliance and documentation",
-        "Onboarding advisory and HR integration"
+        "Recruitment and talent acquisition",
+        "HR policy development and compliance",
+        "Performance management systems",
+        "Organizational development and culture transformation"
+      ]
+    },
+    {
+      title: "4. Training & Capacity Development",
+      icon: Calculator,
+      description: "Our training arm delivers structured programs tailored to both individuals and corporate organizations. We focus on equipping participants with practical skills that drive measurable performance improvements.",
+      benefits: [
+        "Leadership and managerial development",
+        "Corporate governance and compliance",
+        "Relationship management and customer experience",
+        "Introduction to specialized sectors (including Oil & Gas)"
+      ]
+    },
+    {
+      title: "5. Financial Advisory & Fund Intermediation",
+      icon: BarChart3,
+      description: "We assist clients in accessing the right funding solutions and optimizing their financial strategy.",
+      benefits: [
+        "Structuring and packaging funding requests",
+        "Liaising with financial institutions (local and international)",
+        "Investment planning and financial strategy",
+        "Cash flow and fund management optimization"
+      ]
+    },
+    {
+      title: "6. Debt Recovery Services",
+      icon: FileText,
+      description: "We deploy ethical and effective recovery strategies to help you manage and recover outstanding obligations.",
+      benefits: [
+        "Negotiation and restructuring",
+        "Debt swaps and settlements",
+        "Legal recovery processes",
+        "Commercial debt advisory"
+      ]
+    },
+    {
+      title: "7. Brand Management",
+      icon: Megaphone,
+      description: "We help organizations build strong, differentiated brands that resonate with their target audience.",
+      benefits: [
+        "Aligning products/services with customer perception",
+        "Enhancing market positioning",
+        "Building customer loyalty and engagement"
+      ]
+    },
+    {
+      title: "8. Property & Investment Consultancy",
+      icon: PieChart,
+      description: "We provide advisory services in real estate and property investments for corporate and individual clients.",
+      benefits: [
+        "Investment planning and feasibility analysis",
+        "Property acquisition and disposal",
+        "Construction financing advisory",
+        "Cooperative and corporate housing solutions"
       ]
     }
   ];

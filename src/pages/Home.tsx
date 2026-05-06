@@ -26,14 +26,13 @@ export default function Home() {
     "Amazon Energy Group",
     "Lakel Afrik Petroleum Limited",
     "Life Light Energy Limited",
-    "Eliezer Workplace Management",
-    "Hephzibah Petroleum & Marine Services Nigeria",
+    "Eliezer Workplace Management Limited",
+    "Miraflash Pharmaceutical Limited",
     "Agape Health Limited",
-    "Biaachi Global Services",
+    "Biaachi Global Services Limited",
     "Biane Microfinance Bank",
     "Folamart Limited",
-    "Admos Global Resource Limited",
-    "Miraflash Pharmaceuticals",
+    "Admos Global Resource Limited"
   ];
 
   return (
@@ -166,27 +165,27 @@ export default function Home() {
           <div className={styles.servicesGrid}>
             <ServiceCard
               index={0}
-              title="Accounting & Bookkeeping"
-              description="Meticulous financial record-keeping providing real-time clarity into the health of your enterprise."
-              icon={FileText}
+              title="1. Management Consultancy"
+              description="Strategic advisory services aimed at improving organizational efficiency and governance."
+              icon={TrendingUp}
             />
             <ServiceCard
               index={1}
-              title="Internal Audit & Risk"
-              description="Rigorous audit and risk management frameworks that safeguard your organization's assets and integrity."
+              title="2. Forensic Audit & Risk"
+              description="Detect, prevent, and mitigate financial and operational risks."
               icon={ShieldCheck}
             />
             <ServiceCard
               index={2}
-              title="Debt Recovery"
-              description="Strategic, professional debt recovery services designed to restore your cash flow efficiently."
-              icon={TrendingUp}
+              title="3. HR Management"
+              description="Build high-performing teams through comprehensive recruitment and HR solutions."
+              icon={Users}
             />
             <ServiceCard
               index={3}
-              title="Financial Advisory"
-              description="Expert strategic guidance for sustainable growth, capital planning, and financial excellence."
-              icon={BarChart3}
+              title="4. Training & Capacity"
+              description="Structured programs tailored to drive measurable performance improvements."
+              icon={Calculator}
             />
           </div>
         </div>
@@ -214,10 +213,11 @@ export default function Home() {
 
               <div className={styles.whyList}>
                 {[
-                  { title: "Executive Involvement", desc: "Senior partners are personally involved in every major engagement." },
-                  { title: "Sector Expertise", desc: "Decades of combined experience across diverse industry sectors." },
-                  { title: "Results Oriented", desc: "We focus on tangible outcomes that drive business performance." },
-                  { title: "Confidentiality", desc: "Unwavering commitment to the highest standards of integrity." }
+                  { title: "Proven Track Record", desc: "Proven track record across multiple industries." },
+                  { title: "Deep Expertise", desc: "Deep expertise in banking, finance, and corporate governance." },
+                  { title: "Practical Solutions", desc: "Practical, results-oriented solutions tailored for your business." },
+                  { title: "Strong Network", desc: "Strong network of industry professionals and partners." },
+                  { title: "Commitment to Excellence", desc: "Unwavering commitment to integrity, excellence, and client success." }
                 ].map((item, i) => (
                   <div key={i} className={styles.whyItem}>
                     <div className={styles.whyItemNumber}>

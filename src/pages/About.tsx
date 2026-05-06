@@ -16,52 +16,38 @@ export default function About() {
   const executives = [
     {
       name: "Aseniserare Justus Ade",
-      role: "Chief Executive Officer",
-      bio: "With over 28 years of distinguished experience in banking and consulting, Mr. Ade brings a rare depth of expertise to Royalway. He served as Zonal Head of Credit Risk Management at Unity Bank and is a Fellow of the Chartered Institute of Bankers of Nigeria, holding an MBA in HR Management.",
+      role: "Managing Director",
+      bio: "Ade is a graduate of Banking and Finance from Ogun State University and holds an MBA (Human Resources Management) from Lagos State University. He is a Chartered Banker and Fellow of the Chartered Institute of Bankers of Nigeria, as well as a Chartered Management Consultant and Fellow of the Institute of Management Consultants. He has over 30 years of banking and consulting experience, having held senior management roles at Heritage Bank, Sterling Bank, and Unity Bank. He currently serves as Managing Director of Royalway Consulting Bureau, Associate Partner at Total Business Support International Consulting, Chairman of Buildomart Merchandising & Constructions Limited, and Director at Eliezer Workplace Management Limited.",
       image: ceoPhoto,
-      credentials: "FCIB | MBA"
+      credentials: "BSc | MBA | FCIB | CMC | FIMC"
     },
     {
       name: "Ajetunmobi Folayemi Benson",
       role: "Director, Internal Audit & Control",
-      bio: "A seasoned banking professional with 25+ years of experience, Mr. Benson is a highly respected auditor and internal control expert. His meticulous approach to risk and governance has helped numerous organizations strengthen their financial frameworks.",
+      bio: "Benson holds a Bachelor's degree in Business Administration from the University of Lagos and an MBA from Lagos State University. He is also an Associate Member of the Chartered Institute of Finance and Control. With over 25 years of experience in the banking sector, he has served in various strategic roles. He is recognized as a meticulous Auditor and Internal Control professional, with strong expertise in fraud detection, control systems, and IT auditing.",
       image: exec2Photo,
-      credentials: "Internal Control Specialist"
-    },
-    {
-      name: "Prof. Jumoke Familoni",
-      role: "Professor of Entrepreneurship & Strategy",
-      bio: "Professor Familoni is a distinguished academic and practitioner renowned for her expertise in entrepreneurship, leadership coaching, and strategic business development. She brings world-class intellectual rigor to Royalway's advisory and training services.",
-      image: exec3Photo,
-      credentials: "Professor | Strategic Advisor"
-    },
-    {
-      name: "Engr. Toba Akinmoladun",
-      role: "Senior Advisor, Energy & Oil Sector",
-      bio: "A veteran of the oil and gas industry with over 30 years of experience, Engr. Akinmoladun served as General Manager of Wells at Shell. He brings unmatched technical and strategic insight to clients in the energy sector.",
-      image: null,
-      credentials: "30+ Years | Shell GM"
+      credentials: "BSc | MBA | ACIFCN"
     },
     {
       name: "Komna Oladipo Sessi",
       role: "Senior Business Consultant",
-      bio: "With 30+ years of cross-industry experience spanning banking, manufacturing, and services, Mr. Sessi's holistic understanding of business operations enables him to deliver transformative consulting engagements for Royalway's diverse clientele.",
-      image: null,
-      credentials: "30+ Years Cross-Industry"
+      bio: "Komna is a Nigerian with a degree in Business Economics from the University of Wisconsin-Eau Claire, USA, and a Master's degree from Northwestern Missouri State University, USA. With over 30 years of postgraduate experience, he has held CEO positions in organizations with diverse interests, including manufacturing, commerce, and international business ventures.",
+      image: exec3Photo, /* I will assign exec3Photo to Komna since he is the 3rd executive in the new list, assuming the photos correspond */
+      credentials: "BSc | MSc"
     },
     {
       name: "Afolashade Osuntuyi",
       role: "Head, Human Resources & Recruitment",
-      bio: "An accomplished HR professional with 15+ years of expertise in recruitment, payroll administration, and regulatory compliance. Mrs. Osuntuyi leads Royalway's HR consulting and recruitment mandates with precision and strategic foresight.",
+      bio: "Afolashade is an experienced HR and Administrative professional with over 15 years of experience across hospitality, telecommunications, consulting, and recruitment sectors. She specializes in organizational development, productivity enhancement, and operational optimization. She holds an MBA from Ladoke Akintola University of Technology, a BSc in Business Administration, and a BSA in Secretarial Administration.",
       image: null,
-      credentials: "HR Expert | 15+ Years"
+      credentials: "BSc | BSA | MBA"
     },
     {
       name: "Muri Akinborode",
       role: "Director, Audit & Compliance",
-      bio: "A former KPMG professional with 20+ years of audit and compliance experience across banking and the private sector, Mr. Akinborode ensures that our clients' governance structures meet the highest regulatory and international standards.",
+      bio: "Muri has over 20 years of extensive experience in banking and auditing. He began his career with KPMG before working with Trade Bank Plc, Oceanic Bank International Plc, and Ecobank Nigeria Limited. He specializes in Internal Audit, Internal Control, Forensic Investigation, and Compliance. He holds a BSc (Hons) in Finance and an MBA in Marketing from the University of Ilorin and is an Associate Member of the Compliance Institute of Nigeria.",
       image: null,
-      credentials: "Ex-KPMG | 20+ Years"
+      credentials: "BSc | MBA | ACIN"
     }
   ];
 
@@ -78,9 +64,20 @@ export default function About() {
             <h1 className={styles.heading}>
               Built on Trust.<br />Driven by Excellence.
             </h1>
-            <p className={styles.subtext}>
-              Royalway Consulting Bureau is an emerging consulting firm helping businesses solve challenges, improve performance, and ensure proper processes and procedures across all aspects of their financial and operational lives.
-            </p>
+            <div className={`${styles.subtext} space-y-4`}>
+              <p>
+                Royalway Consulting Bureau (RCB) is a duly registered consulting firm with the Corporate Affairs Commission (CAC) of Nigeria. We are a multidisciplinary professional services firm committed to delivering innovative, practical, and results-driven solutions that enhance organizational performance, strengthen governance structures, and drive sustainable growth.
+              </p>
+              <p>
+                With a strong presence in Lagos, our registered office is located at 4/6 Adebiyi Abdulquadri Street, Magodo Phase II, while our operational and training facility is situated at 36A Toyin Street, Ikeja. We also leverage premium training environments, including 5-star hotel facilities, to deliver world-class learning experiences when required.
+              </p>
+              <p>
+                We serve as the principal consultant and brand manager to Eliezer Group, a leading integrated facility management company providing services to major institutions such as Chevron Nigeria, Egbin Power Plc, MTN Nigeria, UBA Plc, IITA Ibadan, and Bowen University.
+              </p>
+              <p>
+                We have also successfully delivered fund intermediation and debt recovery services to a diverse portfolio of corporate and high-net-worth clients within and outside Nigeria.
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
