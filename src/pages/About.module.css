@@ -3,17 +3,8 @@
    ============================================================ */
 
 .pageWrapper {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
   min-height: 100vh;
-  background-color: var(--background);
-}
-
-@media (min-width: 768px) {
-  .pageWrapper {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
+  background-color: hsl(var(--background));
 }
 
 .container {
@@ -26,13 +17,13 @@
    HEADER SECTION
    ============================================================ */
 .headerSection {
-  padding: 3rem 0;
+  padding: 4rem 0 3rem 0;
   background-color: rgba(var(--muted-rgb, 240 240 240) / 0.3);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid hsl(var(--border));
 }
 
 @media (min-width: 768px) {
-  .headerSection { padding: 5rem 0; }
+  .headerSection { padding: 6rem 0 5rem 0; }
 }
 
 .headerContent {
@@ -40,7 +31,7 @@
 }
 
 .sectionLabel {
-  color: var(--secondary);
+  color: hsl(var(--secondary));
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -52,14 +43,14 @@
   font-family: var(--font-serif, Georgia, serif);
   font-size: clamp(2.5rem, 5vw, 3rem);
   font-weight: 700;
-  color: var(--foreground);
+  color: hsl(var(--foreground));
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
 
 .subtext {
   font-size: 1.25rem;
-  color: var(--muted-foreground);
+  color: hsl(var(--muted-foreground));
   line-height: 1.75;
 }
 
@@ -89,7 +80,7 @@
 .sectionLine {
   width: 3rem;
   height: 0.25rem;
-  background-color: var(--secondary);
+  background-color: hsl(var(--secondary));
   margin-bottom: 2rem;
 }
 
@@ -97,12 +88,12 @@
   font-family: var(--font-serif, Georgia, serif);
   font-size: 1.875rem;
   font-weight: 700;
-  color: var(--foreground);
+  color: hsl(var(--foreground));
   margin-bottom: 1.5rem;
 }
 
 .paragraphText {
-  color: var(--muted-foreground);
+  color: hsl(var(--muted-foreground));
   line-height: 1.75;
   font-size: 1.125rem;
 }
@@ -157,8 +148,8 @@
    ============================================================ */
 .leadershipSection {
   padding: 4rem 0;
-  background-color: var(--primary);
-  color: var(--primary-foreground);
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
 }
 
 @media (min-width: 768px) {
@@ -236,7 +227,7 @@
 }
 
 .execRole {
-  color: var(--secondary);
+  color: hsl(var(--secondary));
   font-weight: 500;
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -303,7 +294,7 @@
   font-family: var(--font-serif, Georgia, serif);
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--secondary);
+  color: hsl(var(--secondary));
 }
 
 .execListCardName {
@@ -314,7 +305,7 @@
 }
 
 .execListCardRole {
-  color: var(--secondary);
+  color: hsl(var(--secondary));
   font-weight: 500;
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -334,3 +325,4 @@
   font-weight: 300;
   font-size: 0.875rem;
 }
+
