@@ -28,16 +28,10 @@ export function Navbar() {
   ];
 
   return (
-    <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-white/95 backdrop-blur-sm shadow-sm border-b border-border py-4"
-          : "bg-transparent py-6"
-      }`}
-    >
+    <header className="sticky top-0 w-full z-50 bg-background py-4 shadow-sm border-b border-border transition-all">
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className={`font-serif text-2xl font-bold transition-colors ${isScrolled || isMobileMenuOpen ? "text-primary" : "text-primary"}`}>
+          <div className="font-serif text-2xl font-bold transition-colors text-primary">
             Royalway<span className="text-secondary">.</span>
           </div>
         </Link>
@@ -49,11 +43,7 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               className={`text-sm font-medium transition-colors hover:text-secondary ${
-                location === link.href
-                  ? "text-secondary"
-                  : isScrolled
-                  ? "text-foreground/80"
-                  : "text-foreground/80"
+                location === link.href ? "text-secondary" : "text-foreground/80"
               }`}
             >
               {link.label}
