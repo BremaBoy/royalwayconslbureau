@@ -26,13 +26,14 @@ export default function Home() {
     "Amazon Energy Group",
     "Lakel Afrik Petroleum Limited",
     "Life Light Energy Limited",
-    "Eliezer Workplace Management Limited",
-    "Miraflash Pharmaceutical Limited",
+    "Eliezer Workplace Management",
+    "Hephzibah Petroleum & Marine Services Nigeria",
     "Agape Health Limited",
-    "Biaachi Global Services Limited",
+    "Biaachi Global Services",
     "Biane Microfinance Bank",
     "Folamart Limited",
-    "Admos Global Resource Limited"
+    "Admos Global Resource Limited",
+    "Miraflash Pharmaceuticals"
   ];
 
   return (
@@ -274,11 +275,10 @@ export default function Home() {
 
         <div className={styles.clientsContainer}>
           <motion.div {...fadeIn} className={styles.clientsHeader}>
-            <p className={styles.clientsLabelText}>Our Client Network</p>
-            <h2 className={styles.clientsHeading}>Trusted by Industry Leaders</h2>
+            <p className={styles.clientsLabelText}>OUR CLIENTS</p>
+            <h2 className={styles.clientsHeading}>Trusted by Leading Organizations</h2>
             <p className={styles.clientsSubtext}>
-              We maintain long-term partnerships with leading organizations across energy,
-              healthcare, and finance.
+              We are proud to serve an exceptional portfolio of clients across energy, healthcare, finance, and more.
             </p>
           </motion.div>
 
