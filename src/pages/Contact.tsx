@@ -119,7 +119,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className={styles.contactItemTitle}>Phone</h4>
-                      <p className={styles.contactItemText}>Available upon inquiry</p>
+                      <p className={styles.contactItemText}>+2348037184402</p>
                     </div>
                   </div>
 
