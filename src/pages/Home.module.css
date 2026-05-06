@@ -19,7 +19,8 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-color: hsl(var(--primary)); /* Global primary blue */
+  background-color: #0c1a32; /* Forced brand blue */
+  color: #ffffff;
   padding-top: 5rem; /* pt-20 */
   padding-bottom: 4rem;
 }
@@ -254,8 +255,7 @@
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  z-index: 20;
-  pointer-events: none;
+  z-index: 10;
 }
 
 .heroCurve svg {
@@ -284,14 +284,6 @@
   background-color: #ffffff;
   position: relative;
   overflow: hidden;
-  margin-top: -4rem;
-  z-index: 15;
-}
-
-@media (min-width: 768px) {
-  .statsSection {
-    margin-top: -6rem;
-  }
 }
 
 .statsDivider {
@@ -467,8 +459,8 @@
    ============================================================ */
 .whySection {
   padding: 4rem 0;
-  background-color: hsl(var(--primary));
-  color: hsl(var(--primary-foreground));
+  background-color: #0c1a32;
+  color: #ffffff;
   position: relative;
   overflow: hidden;
 }
@@ -554,8 +546,8 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  background-color: hsl(var(--primary-foreground));
-  color: hsl(var(--primary));
+  background-color: #ffffff;
+  color: #0c1a32;
   display: flex;
   align-items: center;
   justify-content: center;
