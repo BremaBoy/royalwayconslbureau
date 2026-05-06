@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-color: #0f172a; /* Deep blue background */
+  background-color: hsl(var(--primary)); /* Global primary blue */
   padding-top: 5rem; /* pt-20 */
 }
 
@@ -31,22 +31,15 @@
 }
 
 .heroBgRadial {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 70% 30%, rgba(45, 60, 45, 0.4) 0%, transparent 70%);
+  display: none;
 }
 
 .heroBgGradient {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom right, #0f172a, rgba(15, 23, 42, 0.95), rgba(30, 58, 138, 0.80)); /* Blue gradient */
+  display: none;
 }
 
 .heroBgGrid {
-  position: absolute;
-  inset: 0;
-  opacity: 0.03;
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54 48L54 6L6 6L6 54L54 54L54 48ZM58 60L2 60L2 2L58 2L58 60Z' fill='%23ffffff' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
+  display: none;
 }
 
 /* Hero container */

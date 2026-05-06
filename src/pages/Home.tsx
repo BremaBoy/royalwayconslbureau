@@ -50,27 +50,16 @@ export default function Home() {
 
         <div className={styles.heroContainer}>
           <div className={styles.heroGrid}>
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className={styles.heroContent}
-            >
+            <div className={styles.heroContent}>
               {/* Badge */}
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-                className={styles.heroBadge}
-              >
+              <div className={styles.heroBadge}>
                 <span className={styles.heroBadgeDot}>
-                  <span className={styles.heroBadgePing} />
                   <span className={styles.heroBadgeDotInner} />
                 </span>
                 <span className={styles.heroBadgeText}>
                   Royalway Consulting Bureau
                 </span>
-              </motion.div>
+              </div>
 
               {/* Heading */}
               <h1 className={styles.heroHeading}>
@@ -95,7 +84,6 @@ export default function Home() {
                   <span className={styles.heroPrimaryBtnContent}>
                     Our Expertise <ArrowRight size={14} className={styles.arrowIcon} />
                   </span>
-                  <div className={styles.heroPrimaryBtnOverlay} />
                 </Link>
 
                 <Link
@@ -106,14 +94,10 @@ export default function Home() {
                   Schedule Consultation
                 </Link>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
 
-        {/* Bottom Fade */}
-        <div className={styles.heroBottomFade}>
-          <div className={styles.heroBottomFadeGradient} />
-        </div>
       </section>
 
       {/* ── Stats Banner ── */}
