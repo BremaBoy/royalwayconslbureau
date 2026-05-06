@@ -207,12 +207,6 @@
   height: 100%;
   object-fit: cover;
   object-position: top;
-  filter: grayscale(100%);
-  transition: filter 0.5s;
-}
-
-.execCard:hover .execImage {
-  filter: grayscale(0%);
 }
 
 .execName {
