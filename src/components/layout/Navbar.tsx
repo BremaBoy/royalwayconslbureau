@@ -31,9 +31,11 @@ export function Navbar() {
     <header className="sticky top-0 w-full z-50 bg-background py-4 shadow-sm border-b border-border transition-all">
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="font-serif text-2xl font-bold transition-colors text-primary">
-            Royalway<span className="text-secondary">.</span>
-          </div>
+          <img 
+            src="/logo.png" 
+            alt="Royalway Consulting Bureau" 
+            className="h-10 md:h-12 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop Nav */}

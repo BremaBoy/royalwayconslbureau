@@ -7,10 +7,13 @@ export function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
-            <Link href="/" className="font-serif text-3xl font-bold mb-2 block">
-              Royalway<span className="text-secondary">.</span>
+            <Link href="/" className="mb-4 block">
+              <img 
+                src="/logo.png" 
+                alt="Royalway Consulting Bureau" 
+                className="h-12 md:h-14 w-auto object-contain brightness-0 invert"
+              />
             </Link>
-            <p className="text-secondary text-xs uppercase tracking-widest mb-5">Consulting Bureau</p>
             <p className="text-primary-foreground/70 max-w-sm font-light leading-relaxed">
               Royalway Consulting Bureau helps businesses solve challenges, improve performance, and ensure proper processes and procedures — delivering expert solutions in accounting, audit, debt recovery, and business advisory.
             </p>
