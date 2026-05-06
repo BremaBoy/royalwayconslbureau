@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { ArrowRight, BarChart3, FileText, ShieldCheck, TrendingUp } from "lucide-react";
+import { ArrowRight, BarChart3, FileText, ShieldCheck, TrendingUp, Users, Calculator } from "lucide-react";
 import { ServiceCard } from "@/components/ui/service-card";
 import styles from "./Home.module.css";
 const teamPhoto = "/images/A6769C0F-9FAF-4C83-AF07-7BAD4EC3F2D2_1777835101069.jpeg";
