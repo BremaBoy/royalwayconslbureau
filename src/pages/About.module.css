@@ -3,10 +3,17 @@
    ============================================================ */
 
 .pageWrapper {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   min-height: 100vh;
   background-color: var(--background);
+}
+
+@media (min-width: 768px) {
+  .pageWrapper {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 .container {
@@ -19,9 +26,13 @@
    HEADER SECTION
    ============================================================ */
 .headerSection {
-  padding: 5rem 0;
+  padding: 3rem 0;
   background-color: rgba(var(--muted-rgb, 240 240 240) / 0.3);
   border-bottom: 1px solid var(--border);
+}
+
+@media (min-width: 768px) {
+  .headerSection { padding: 5rem 0; }
 }
 
 .headerContent {
@@ -56,7 +67,11 @@
    MISSION & VISION SECTION
    ============================================================ */
 .missionVisionSection {
-  padding: 6rem 0;
+  padding: 4rem 0;
+}
+
+@media (min-width: 768px) {
+  .missionVisionSection { padding: 6rem 0; }
 }
 
 .missionVisionGrid {
@@ -141,9 +156,13 @@
    LEADERSHIP SECTION
    ============================================================ */
 .leadershipSection {
-  padding: 6rem 0;
+  padding: 4rem 0;
   background-color: var(--primary);
   color: var(--primary-foreground);
+}
+
+@media (min-width: 768px) {
+  .leadershipSection { padding: 6rem 0; }
 }
 
 .leadershipHeader {

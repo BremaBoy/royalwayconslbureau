@@ -15,7 +15,7 @@
 .heroSection {
   position: relative;
   height: 95vh;
-  min-height: 700px;
+  min-height: 500px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -443,11 +443,15 @@
    WHY CHOOSE US SECTION
    ============================================================ */
 .whySection {
-  padding: 8rem 0;
+  padding: 4rem 0;
   background-color: var(--primary);
   color: var(--primary-foreground);
   position: relative;
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .whySection { padding: 8rem 0; }
 }
 
 .whyDecorBlob {
@@ -472,8 +476,12 @@
 .whyGrid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 5rem;
+  gap: 3rem;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .whyGrid { gap: 5rem; }
 }
 
 @media (min-width: 1024px) {
@@ -610,12 +618,16 @@
    CLIENTS SECTION
    ============================================================ */
 .clientsSection {
-  padding: 8rem 0;
+  padding: 4rem 0;
   background-color: rgba(var(--muted-rgb, 240 240 240) / 0.1);
   border-top: 1px solid rgba(var(--border-rgb, 200 200 200) / 0.5);
   border-bottom: 1px solid rgba(var(--border-rgb, 200 200 200) / 0.5);
   position: relative;
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .clientsSection { padding: 8rem 0; }
 }
 
 .clientsBgPattern {
