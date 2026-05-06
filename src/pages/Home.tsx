@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowRight, BarChart3, FileText, ShieldCheck, TrendingUp } from "lucide-react";
 import { ServiceCard } from "@/components/ui/service-card";
-import teamPhoto from "@assets/A6769C0F-9FAF-4C83-AF07-7BAD4EC3F2D2_1777835101069.jpeg";
 import styles from "./Home.module.css";
+const teamPhoto = "/images/about.png"; // Fallback to local image
 
 export default function Home() {
   const fadeIn = {
