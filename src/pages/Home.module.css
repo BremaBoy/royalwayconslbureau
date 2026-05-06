@@ -21,6 +21,7 @@
   overflow: hidden;
   background-color: hsl(var(--primary)); /* Global primary blue */
   padding-top: 5rem; /* pt-20 */
+  padding-bottom: 4rem;
 }
 
 /* Background layer */
@@ -101,7 +102,7 @@
   height: 100%;
   width: 100%;
   border-radius: 9999px;
-  background-color: var(--secondary);
+  background-color: hsl(var(--secondary));
   opacity: 0.75;
   animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
@@ -116,11 +117,11 @@
   border-radius: 9999px;
   height: 0.5rem;
   width: 0.5rem;
-  background-color: var(--secondary);
+  background-color: hsl(var(--secondary));
 }
 
 .heroBadgeText {
-  color: var(--secondary);
+  color: hsl(var(--secondary));
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-size: 10px;
@@ -142,7 +143,7 @@
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to right, var(--secondary), rgba(var(--secondary-rgb, 180 150 60) / 0.8), rgba(var(--secondary-rgb, 180 150 60) / 0.6));
+  background-image: linear-gradient(to right, hsl(var(--secondary)), rgba(var(--secondary-rgb, 180 150 60) / 0.8), rgba(var(--secondary-rgb, 180 150 60) / 0.6));
   font-style: italic;
   font-weight: 500;
 }
@@ -186,8 +187,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--secondary);
-  color: var(--secondary-foreground);
+  background-color: hsl(var(--secondary));
+  color: hsl(var(--secondary-foreground));
   height: 3.5rem;
   padding: 0 2.5rem;
   border-radius: 0;
@@ -246,27 +247,41 @@
 }
 
 /* Bottom fade */
-.heroBottomFade {
+.heroCurve {
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
-  height: 6rem;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
   z-index: 10;
 }
 
-.heroBottomFadeGradient {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, var(--background), transparent);
+.heroCurve svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 60px;
 }
+
+.curveFill {
+  fill: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .heroCurve svg {
+    height: 100px;
+  }
+}
+
+.heroBottomFade {
 
 /* ============================================================
    STATS SECTION
    ============================================================ */
 .statsSection {
   padding: 5rem 0;
-  background-color: var(--background);
+  background-color: #ffffff;
   position: relative;
   overflow: hidden;
 }
@@ -311,7 +326,7 @@
   font-family: var(--font-serif, Georgia, serif);
   font-size: clamp(2.5rem, 5vw, 3.75rem);
   font-weight: 700;
-  color: var(--primary);
+  color: hsl(var(--primary));
   margin-bottom: 0.75rem;
   transition: transform 0.3s;
 }
@@ -321,7 +336,7 @@
 }
 
 .statLabel {
-  color: var(--muted-foreground);
+  color: hsl(var(--muted-foreground));
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -373,11 +388,11 @@
 .sectionLabelLine {
   height: 1px;
   width: 3rem;
-  background-color: var(--secondary);
+  background-color: hsl(var(--secondary));
 }
 
 .sectionLabelText {
-  color: var(--secondary);
+  color: hsl(var(--secondary));
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -388,7 +403,7 @@
   font-family: var(--font-serif, Georgia, serif);
   font-size: clamp(2rem, 5vw, 3.75rem);
   font-weight: 700;
-  color: var(--foreground);
+  color: hsl(var(--foreground));
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
@@ -399,7 +414,7 @@
 }
 
 .sectionSubtext {
-  color: var(--muted-foreground);
+  color: hsl(var(--muted-foreground));
   font-size: 1.125rem;
   line-height: 1.75;
   font-weight: 300;
@@ -409,7 +424,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  color: var(--primary);
+  color: hsl(var(--primary));
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -421,8 +436,8 @@
 }
 
 .servicesLink:hover {
-  color: var(--secondary);
-  border-color: var(--secondary);
+  color: hsl(var(--secondary));
+  border-color: hsl(var(--secondary));
 }
 
 .servicesGrid {
@@ -444,8 +459,8 @@
    ============================================================ */
 .whySection {
   padding: 4rem 0;
-  background-color: var(--primary);
-  color: var(--primary-foreground);
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
   position: relative;
   overflow: hidden;
 }
@@ -501,13 +516,14 @@
 }
 
 .whyHeadingAccent {
-  color: var(--secondary);
+  color: hsl(var(--secondary));
   font-style: italic;
   font-weight: 500;
 }
 
 .whySubtext {
-  color: rgba(var(--primary-foreground-rgb, 255 255 255) / 0.7);
+  color: inherit;
+  opacity: 0.7;
   font-size: 1.125rem;
   margin-bottom: 2.5rem;
   line-height: 1.75;
@@ -530,8 +546,8 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: hsl(var(--primary-foreground));
+  color: hsl(var(--primary));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -541,7 +557,7 @@
 
 .whyItem:hover .whyItemNumber {
   transform: scale(1.1);
-  background-color: var(--secondary);
+  background-color: hsl(var(--secondary));
 }
 
 .whyItemNumberText {
@@ -551,12 +567,13 @@
 
 .whyItemTitle {
   font-weight: 700;
-  color: #fff;
+  color: inherit;
   margin-bottom: 0.25rem;
 }
 
 .whyItemDesc {
-  color: rgba(var(--primary-foreground-rgb, 255 255 255) / 0.6);
+  color: inherit;
+  opacity: 0.6;
   font-size: 0.875rem;
   line-height: 1.6;
 }
@@ -570,7 +587,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  color: var(--secondary);
+  color: hsl(var(--secondary));
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -657,7 +674,7 @@
 }
 
 .clientsLabelText {
-  color: var(--secondary);
+  color: hsl(var(--secondary));
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -669,12 +686,12 @@
   font-family: var(--font-serif, Georgia, serif);
   font-size: clamp(2rem, 4vw, 2.5rem);
   font-weight: 700;
-  color: var(--foreground);
+  color: hsl(var(--foreground));
   margin-bottom: 1.5rem;
 }
 
 .clientsSubtext {
-  color: var(--muted-foreground);
+  color: hsl(var(--muted-foreground));
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.75;
@@ -701,7 +718,7 @@
 }
 
 .clientItem {
-  background-color: var(--background);
+  background-color: hsl(var(--background));
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -716,7 +733,7 @@
 }
 
 .clientName {
-  color: var(--muted-foreground);
+  color: hsl(var(--muted-foreground));
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
@@ -726,7 +743,7 @@
 }
 
 .clientItem:hover .clientName {
-  color: var(--primary);
+  color: hsl(var(--primary));
 }
 
 /* ============================================================
@@ -734,7 +751,7 @@
    ============================================================ */
 .testimonialsSection {
   padding: 8rem 0;
-  background-color: var(--background);
+  background-color: hsl(var(--background));
   position: relative;
   overflow: hidden;
 }
@@ -770,7 +787,7 @@
   padding: 0.375rem 1rem;
   border-radius: 9999px;
   background: rgba(var(--secondary-rgb, 180 150 60) / 0.1);
-  color: var(--secondary);
+  color: hsl(var(--secondary));
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
@@ -782,12 +799,12 @@
   font-family: var(--font-serif, Georgia, serif);
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
-  color: var(--foreground);
+  color: hsl(var(--foreground));
   margin-bottom: 1.5rem;
 }
 
 .testimonialsSubtext {
-  color: var(--muted-foreground);
+  color: hsl(var(--muted-foreground));
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.75;
@@ -804,9 +821,9 @@
 }
 
 .testimonialCard {
-  background-color: var(--card);
+  background-color: hsl(var(--card));
   padding: 2.5rem;
-  border: 1px solid var(--border);
+  border: 1px solid hsl(var(--border));
   position: relative;
   transition: border-color 0.5s, box-shadow 0.5s;
 }
@@ -850,19 +867,19 @@
 .testimonialAuthor {
   font-family: var(--font-serif, Georgia, serif);
   font-weight: 700;
-  color: var(--foreground);
+  color: hsl(var(--foreground));
   transition: color 0.3s;
 }
 
 .testimonialCard:hover .testimonialAuthor {
-  color: var(--primary);
+  color: hsl(var(--primary));
 }
 
 .testimonialRole {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--muted-foreground);
+  color: hsl(var(--muted-foreground));
   font-weight: 700;
   margin-top: 0.25rem;
 }
@@ -872,7 +889,7 @@
    ============================================================ */
 .ctaSection {
   padding: 8rem 0;
-  background-color: var(--background);
+  background-color: hsl(var(--background));
   position: relative;
   overflow: hidden;
 }
@@ -884,8 +901,8 @@
 }
 
 .ctaBox {
-  background-color: var(--primary);
-  color: var(--primary-foreground);
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
   position: relative;
   overflow: hidden;
   padding: 3rem;
@@ -947,8 +964,8 @@
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  background-color: var(--secondary);
-  color: var(--secondary-foreground);
+  background-color: hsl(var(--secondary));
+  color: hsl(var(--secondary-foreground));
   height: 4rem;
   padding: 0 3rem;
   border-radius: 0;
@@ -982,3 +999,4 @@
 .ctaBtn:hover .arrowIcon {
   transform: translateX(0.25rem);
 }
+
