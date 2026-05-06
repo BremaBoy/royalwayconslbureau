@@ -10,12 +10,14 @@ import About from "@/pages/About";
 import Services from "@/pages/Services";
 import Portfolio from "@/pages/Portfolio";
 import Contact from "@/pages/Contact";
+import ScrollToTop from "@/components/layout/ScrollToTop";
 
 const queryClient = new QueryClient();
 
 function Router() {
   return (
     <Layout>
+      <ScrollToTop />
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/about" component={About} />
