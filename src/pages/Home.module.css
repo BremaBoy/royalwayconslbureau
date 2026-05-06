@@ -529,22 +529,23 @@
 .whyItemNumber {
   width: 2.5rem;
   height: 2.5rem;
-  border-radius: 0;
-  border: 1px solid rgba(var(--secondary-rgb, 180 150 60) / 0.3);
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  transition: background 0.3s, color 0.3s;
+  transition: transform 0.3s;
 }
 
 .whyItem:hover .whyItemNumber {
+  transform: scale(1.1);
   background-color: var(--secondary);
-  color: var(--secondary-foreground);
 }
 
 .whyItemNumberText {
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
