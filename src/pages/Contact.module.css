@@ -133,42 +133,21 @@
   color: hsl(var(--primary));
 }
 
-/* Map Placeholder */
-.mapPlaceholder {
-  background-color: rgba(var(--muted-rgb, 240 240 240) / 1);
+/* Live Google Map */
+.mapContainer {
   aspect-ratio: 16/9;
+  width: 100%;
+  margin: 2.5rem 0;
   border: 1px solid hsl(var(--border));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
   overflow: hidden;
-}
-
-.mapOverlay {
-  position: absolute;
-  inset: 0;
-  opacity: 0.1;
-  background: linear-gradient(to bottom right, hsl(var(--primary)), transparent);
-}
-
-.mapContent {
-  text-align: center;
   position: relative;
-  z-index: 10;
+  background-color: rgba(var(--muted-rgb, 240 240 240) / 1);
 }
 
-.mapIcon {
-  color: rgba(var(--primary-rgb, 30 50 30) / 0.5);
-  margin: 0 auto 0.5rem;
-}
-
-.mapText {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: hsl(var(--muted-foreground));
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+.mapIframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /* Consultation Note */

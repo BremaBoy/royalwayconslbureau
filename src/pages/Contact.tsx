@@ -114,13 +114,16 @@ export default function Contact() {
                 </div>
               </div>
 
-              {/* Map Placeholder */}
-              <div className={styles.mapPlaceholder}>
-                <div className={styles.mapOverlay} />
-                <div className={styles.mapContent}>
-                  <MapPin size={32} className={styles.mapIcon} />
-                  <span className={styles.mapText}>Lagos, Nigeria</span>
-                </div>
+              {/* Live Google Map */}
+              <div className={styles.mapContainer}>
+                <iframe
+                  title="Royalway Consulting Bureau Location"
+                  src="https://www.google.com/maps?q=4/6%20Adebiyi%20Abdulquadri%20Street%2C%20Magodo%20Phase%20II%2C%20Lagos&output=embed"
+                  className={styles.mapIframe}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
 
               {/* Consultation Note */}
