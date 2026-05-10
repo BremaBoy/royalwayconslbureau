@@ -23,24 +23,24 @@ export default function About() {
     },
     {
       name: "Ajetunmobi Folayemi Benson",
-      role: "Director, Internal Audit & Control",
+      role: "Deputy ManagingDirector",
       bio: "Benson holds a Bachelor's degree in Business Administration from the University of Lagos and an MBA from Lagos State University. He is also an Associate Member of the Chartered Institute of Finance and Control. With over 25 years of experience in the banking sector, he has served in various strategic roles. He is recognized as a meticulous Auditor and Internal Control professional, with strong expertise in fraud detection, control systems, and IT auditing.",
       image: exec2Photo,
       credentials: "BSc | MBA | ACIFCN"
     },
     {
-      name: "Komna Oladipo Sessi",
-      role: "Senior Business Consultant",
-      bio: "Komna is a Nigerian with a degree in Business Economics from the University of Wisconsin-Eau Claire, USA, and a Master's degree from Northwestern Missouri State University, USA. With over 30 years of postgraduate experience, he has held CEO positions in organizations with diverse interests, including manufacturing, commerce, and international business ventures.",
-      image: exec3Photo, /* I will assign exec3Photo to Komna since he is the 3rd executive in the new list, assuming the photos correspond */
-      credentials: "BSc | MSc"
+      name: "Afolashade Osuntuyi",
+      role: "Associate/Faculty Member",
+      bio: "Afolashade is an experienced HR and Administrative professional with over 15 years of experience across hospitality, telecommunications, consulting, and recruitment sectors. She specializes in organizational development, productivity enhancement, and operational optimization. She holds an MBA from Ladoke Akintola University of Technology, a BSc in Business Administration, and a BSA in Secretarial Administration.",
+      image: exec3Photo, /* I will assign exec3Photo to Afolashade since she is the 3rd executive in the new list, assuming the photos correspond */
+      credentials: "BSc | BSA | MBA"
     },
     {
-      name: "Afolashade Osuntuyi",
+      name: "Komna Oladipo Sessi",
       role: "Head, Human Resources & Recruitment",
-      bio: "Afolashade is an experienced HR and Administrative professional with over 15 years of experience across hospitality, telecommunications, consulting, and recruitment sectors. She specializes in organizational development, productivity enhancement, and operational optimization. She holds an MBA from Ladoke Akintola University of Technology, a BSc in Business Administration, and a BSA in Secretarial Administration.",
+      bio: "Komna is a Nigerian with a degree in Business Economics from the University of Wisconsin-Eau Claire, USA, and a Master's degree from Northwestern Missouri State University, USA. With over 30 years of postgraduate experience, he has held CEO positions in organizations with diverse interests, including manufacturing, commerce, and international business ventures.",
       image: null,
-      credentials: "BSc | BSA | MBA"
+      credentials: "BSc | MSc"
     },
     {
       name: "Muri Akinborode",

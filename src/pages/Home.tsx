@@ -71,7 +71,7 @@ export default function Home() {
 
               <p className={styles.heroSubtext}>
                 Empowering enterprises with precision accounting, meticulous internal audits,
-                and strategic financial advisory since 1998.
+                and strategic financial advisory since 2016.
               </p>
 
               {/* CTA Buttons */}
@@ -120,7 +120,7 @@ export default function Home() {
             className={styles.statsGrid}
           >
             {[
-              { value: "28+", label: "Years Experience" },
+              { value: "10+", label: "Years Experience" },
               { value: "500+", label: "Projects Completed" },
               { value: "11+", label: "Corporate Clients" },
               { value: "100%", label: "Accuracy Rate" },
