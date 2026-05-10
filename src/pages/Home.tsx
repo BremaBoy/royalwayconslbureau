@@ -121,7 +121,6 @@ export default function Home() {
           >
             {[
               { value: "10+", label: "Years Experience" },
-              { value: "500+", label: "Projects Completed" },
               { value: "11+", label: "Corporate Clients" },
               { value: "100%", label: "Accuracy Rate" },
             ].map((stat, i) => (
