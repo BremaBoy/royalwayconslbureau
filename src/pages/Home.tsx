@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { ArrowRight, BarChart3, FileText, ShieldCheck, TrendingUp, Users, Calculator } from "lucide-react";
 import { ServiceCard } from "@/components/ui/service-card";
 import styles from "./Home.module.css";
-const teamPhoto = "/images/A6769C0F-9FAF-4C83-AF07-7BAD4EC3F2D2_1777835101069.jpeg";
+const teamPhoto = "/images/97F4A62A-0201-45DB-9F66-53F8F67E7699_1777835101074.jpeg";
 
 export default function Home() {
   const fadeIn = {
@@ -105,13 +105,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Stats Banner ── */}
       <section className={styles.statsSection}>
-        <div className={styles.statsDivider} style={{ left: "25%" }} />
-        <div className={styles.statsDivider} style={{ left: "50%" }} />
-        <div className={styles.statsDivider} style={{ left: "75%" }} />
-
         <div className={styles.statsContainer}>
+          <div className={styles.statsDivider} style={{ left: "33.33%" }} />
+          <div className={styles.statsDivider} style={{ left: "66.66%" }} />
           <motion.div
             variants={staggerContainer}
             initial="initial"
@@ -259,7 +256,7 @@ export default function Home() {
               <div className={styles.whyImageFrame}>
                 <img
                   src={teamPhoto}
-                  alt="Royalway team at client site"
+                  alt="Royalway Consulting Bureau professional team"
                   className={styles.whyImage}
                 />
               </div>
